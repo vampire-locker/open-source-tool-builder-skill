@@ -30,7 +30,7 @@ open-source-tool-builder/
 让 Codex 从 GitHub 安装这个 skill：
 
 ```text
-Use $skill-installer to install the skill at path `open-source-tool-builder` from git@github.com:vampire-locker/open-source-tool-builder-skill.git
+使用 $skill-installer 从 git@github.com:vampire-locker/open-source-tool-builder-skill.git 安装 skill，路径在 `open-source-tool-builder`
 ```
 
 安装完成后，重启 Codex，让新 skill 被发现。
@@ -49,7 +49,7 @@ cp -R open-source-tool-builder ~/.codex/skills/
 然后开启一个新的 Codex 会话，像这样使用：
 
 ```text
-Use $open-source-tool-builder to create a new open-source CLI tool project.
+使用 $open-source-tool-builder 创建一个新的开源 CLI 工具项目。
 ```
 
 ## 开发
