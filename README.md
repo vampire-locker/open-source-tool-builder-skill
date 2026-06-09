@@ -1,5 +1,7 @@
 # open-source-tool-builder skill
 
+Language: English | [简体中文](README.zh-CN.md)
+
 This repository contains a Codex Skill for creating publishable open-source tool projects from scratch or upgrading local prototypes into GitHub-ready repositories.
 
 ## What It Helps With
