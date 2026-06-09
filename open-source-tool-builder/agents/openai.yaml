@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open Source Tool Builder"
+  short_description: "Create polished open-source tool projects"
+  default_prompt: "Use $open-source-tool-builder to create a publishable open-source tool project from scratch."
