@@ -15,15 +15,16 @@ Use this skill as the main workflow for new tool repositories or for turning pro
 
 1. Inspect the current directory and existing files before making changes.
 2. Clarify only missing information that blocks safe execution, such as the real GitHub repository URL, package name, target platform, or distribution channel.
-3. Choose the smallest suitable technology stack for the target users and platform. Explain the choice briefly, then implement.
-4. Create or adapt the project structure.
-5. Implement the core functionality with conservative dependencies.
-6. Add focused tests for parsing, generation, command construction, configuration, and platform-specific behavior.
-7. Add user-facing documentation and developer documentation.
-8. Add CI and, when distribution requires artifacts, tag-triggered release automation.
-9. Run formatting, tests, and build commands. Fix failures.
-10. Initialize Git only when appropriate, then commit, configure remotes, push, and create a version tag when the user has provided or approved the destination repository.
-11. Summarize what was delivered, how to install and use it, verification results, and the next release process.
+3. If the user asks to create a new tool but does not specify the tool's purpose or core functionality, ask for clarification before implementing. You may suggest 2-3 concrete project ideas, but do not choose and create one without user confirmation unless the user explicitly asks you to decide.
+4. Choose the smallest suitable technology stack for the target users and platform. Explain the choice briefly, then implement.
+5. Create or adapt the project structure.
+6. Implement the core functionality with conservative dependencies.
+7. Add focused tests for parsing, generation, command construction, configuration, and platform-specific behavior.
+8. Add user-facing documentation and developer documentation.
+9. Add CI and, when distribution requires artifacts, tag-triggered release automation.
+10. Run formatting, tests, and build commands. Fix failures.
+11. Initialize Git only when appropriate, then commit, configure remotes, push, and create a version tag when the user has provided or approved the destination repository.
+12. Summarize what was delivered, how to install and use it, verification results, and the next release process.
 
 ## Technology Selection
 
