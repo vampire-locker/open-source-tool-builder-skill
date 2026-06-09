@@ -31,7 +31,7 @@ open-source-tool-builder/
 让 Codex 从 GitHub 安装这个 skill：
 
 ```text
-使用 $skill-installer 从 git@github.com:vampire-locker/open-source-tool-builder-skill.git 安装 skill，路径在 `open-source-tool-builder`
+安装这个 skill：git@github.com:vampire-locker/open-source-tool-builder-skill.git
 ```
 
 安装完成后，重启 Codex，让新 skill 被发现。

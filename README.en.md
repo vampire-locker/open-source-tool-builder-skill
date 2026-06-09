@@ -30,7 +30,7 @@ open-source-tool-builder/
 Ask Codex to install this skill from GitHub:
 
 ```text
-Use $skill-installer to install the skill at path `open-source-tool-builder` from git@github.com:vampire-locker/open-source-tool-builder-skill.git
+Install this skill: git@github.com:vampire-locker/open-source-tool-builder-skill.git
 ```
 
 Restart Codex after installation so the new skill is discovered.
