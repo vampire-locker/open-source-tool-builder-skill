@@ -1,20 +1,21 @@
 # open-source-tool-builder skill
 
-Language: English | [简体中文](README.zh-CN.md)
+语言：简体中文 | [English](README.en.md)
 
-This repository contains a Codex Skill for creating publishable open-source tool projects from scratch or upgrading local prototypes into GitHub-ready repositories.
+这个仓库包含一个 Codex Skill，用于从零创建可发布的开源工具项目、把本地原型整理成适合发布到 GitHub 的开源仓库，或检查并改进现有开源工具项目的发布就绪度。
 
-## What It Helps With
+## 它能帮助什么
 
-- Technology selection for the target users and platform
-- Project structure and implementation workflow
-- Tests, formatting, build commands, and CI
-- User-friendly README files, including bilingual docs when needed
-- GitHub Release automation
-- Installation, uninstall, and troubleshooting docs
-- Platform security and permission notes
+- 根据目标用户和平台进行技术选型
+- 设计项目结构和实现流程
+- 添加测试、格式化、构建命令和 CI
+- 编写对用户友好的 README，默认以简体中文为主，需要时补充英文版
+- 配置 GitHub Release 自动发布
+- 编写安装、卸载和故障排查说明
+- 补充平台安全、权限和系统限制说明
+- 检查现有开源工具仓库的文档、发布、测试和维护完整性
 
-## Skill Location
+## Skill 位置
 
 ```text
 open-source-tool-builder/
@@ -23,21 +24,21 @@ open-source-tool-builder/
   references/
 ```
 
-## Install
+## 安装
 
-### Install With Codex
+### 使用 Codex 安装
 
-Ask Codex to install this skill from GitHub:
+让 Codex 从 GitHub 安装这个 skill：
 
 ```text
-Use $skill-installer to install the skill at path `open-source-tool-builder` from git@github.com:vampire-locker/open-source-tool-builder-skill.git
+使用 $skill-installer 从 git@github.com:vampire-locker/open-source-tool-builder-skill.git 安装 skill，路径在 `open-source-tool-builder`
 ```
 
-Restart Codex after installation so the new skill is discovered.
+安装完成后，重启 Codex，让新 skill 被发现。
 
-### Install Manually
+### 手动安装
 
-Clone the repository and copy the skill folder into your Codex skills directory:
+克隆仓库，并把 skill 文件夹复制到你的 Codex skills 目录：
 
 ```bash
 git clone git@github.com:vampire-locker/open-source-tool-builder-skill.git
@@ -46,22 +47,34 @@ mkdir -p ~/.codex/skills
 cp -R open-source-tool-builder ~/.codex/skills/
 ```
 
-Then start a new Codex session and ask for tasks such as:
+然后开启一个新的 Codex 会话，像这样使用：
 
 ```text
-Use $open-source-tool-builder to create a new open-source CLI tool project.
+使用 $open-source-tool-builder 创建一个新的开源 CLI 工具项目。
 ```
 
-## Development
+也可以用于检查现有项目：
 
-Validate the skill structure with the Skill Creator validator:
+```text
+使用 $open-source-tool-builder 检查这个开源工具仓库的发布就绪度，并指出需要补齐的内容。
+```
+
+## 开发
+
+使用本仓库校验脚本检查 skill 结构：
+
+```bash
+python3 scripts/validate_skill.py
+```
+
+也可以使用 Skill Creator validator：
 
 ```bash
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py open-source-tool-builder
 ```
 
-The exact `.system` path may differ depending on your Codex installation.
+具体的 `.system` 路径可能会因你的 Codex 安装方式而不同。
 
-## License
+## 许可证
 
 MIT

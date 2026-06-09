@@ -44,7 +44,7 @@ Before selecting a stack, weigh: target user runtime burden, distribution model,
 
 Create documentation for first-time users, not only for the author.
 
-Use `README.md` as the primary language. Add `README.zh-CN.md` when Chinese users are part of the target audience or the user asks for bilingual docs. Put language-switch links near the top of both files.
+Use `README.md` as the Simplified Chinese primary language by default. Add `README.en.md` when international users are part of the target audience or the user asks for bilingual docs. Put language-switch links near the top of both files.
 
 README content should include, as applicable:
 
