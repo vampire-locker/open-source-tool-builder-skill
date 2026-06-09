@@ -27,19 +27,21 @@ open-source-tool-builder/
 
 ### Install With Codex
 
-After this repository is published to GitHub, copy the repository URL and ask Codex:
+Ask Codex to install this skill from GitHub:
 
 ```text
-Use $skill-installer to install the skill at path `open-source-tool-builder` from this GitHub repository: paste the repository URL here.
+Use $skill-installer to install the skill at path `open-source-tool-builder` from git@github.com:vampire-locker/open-source-tool-builder-skill.git
 ```
 
 Restart Codex after installation so the new skill is discovered.
 
 ### Install Manually
 
-Copy or symlink the skill folder into your Codex skills directory:
+Clone the repository and copy the skill folder into your Codex skills directory:
 
 ```bash
+git clone git@github.com:vampire-locker/open-source-tool-builder-skill.git
+cd open-source-tool-builder-skill
 mkdir -p ~/.codex/skills
 cp -R open-source-tool-builder ~/.codex/skills/
 ```
