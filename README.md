@@ -23,7 +23,19 @@ open-source-tool-builder/
   references/
 ```
 
-## Install Locally
+## Install
+
+### Install With Codex
+
+After this repository is published to GitHub, copy the repository URL and ask Codex:
+
+```text
+Use $skill-installer to install the skill at path `open-source-tool-builder` from this GitHub repository: paste the repository URL here.
+```
+
+Restart Codex after installation so the new skill is discovered.
+
+### Install Manually
 
 Copy or symlink the skill folder into your Codex skills directory:
 
